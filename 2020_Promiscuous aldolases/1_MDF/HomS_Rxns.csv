@@ -1,0 +1,9 @@
+RxnID,RxnFormula
+SAL,kegg:C00037 + kegg:C00067 <=> kegg:C00065
+SDH,kegg:C00065 <=> kegg:C00022 + kegg:C00014
+HAL,kegg:C00022 + kegg:C00067 <=> metanetx.chemical:MNXM480326
+HAT,metanetx.chemical:MNXM480326 + kegg:C00025 <=> kegg:C00263 + kegg:C00026
+HSK,kegg:C00263 + kegg:C00002 <=> kegg:C01102 + kegg:C00008
+TS,kegg:C01102 + kegg:C00001 <=> kegg:C00188 + kegg:C00009
+LAT,kegg:C00188 <=> kegg:C00084 + kegg:C00037
+ADH,kegg:C00084 + kegg:C00003 + kegg:C00010 <=> kegg:C00024 + kegg:C00004

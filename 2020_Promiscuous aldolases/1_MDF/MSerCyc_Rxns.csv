@@ -1,0 +1,13 @@
+RxnID,RxnFormula
+FTL,kegg:C00058 + kegg:C00101 + kegg:C00002 <=> kegg:C00234 + kegg:C00008 + kegg:C00009
+MTHFC,kegg:C00234 <=> kegg:C00445 + kegg:C00001
+MTHFD,kegg:C00445 + kegg:C00005 <=> kegg:C00143 + kegg:C00006
+SHMT,kegg:C00143 + kegg:C00037 + kegg:C00001 <=> kegg:C00065 + kegg:C00101
+SDH,kegg:C00065 <=> kegg:C00022 + kegg:C00014
+PPS,kegg:C00002 + kegg:C00022 + kegg:C00001 <=> kegg:C00009 + kegg:C00020 + kegg:C00074
+PPC,kegg:C00074 + kegg:C00011 + kegg:C00001 <=> kegg:C00036 + kegg:C00009
+MaDH,kegg:C00004 + kegg:C00036 <=> kegg:C00003 + kegg:C00149
+MTK,kegg:C00002 + kegg:C00010 + kegg:C00149 <=> kegg:C00008 + kegg:C00009 + kegg:C04348
+MCL,kegg:C04348 <=> kegg:C00024 + kegg:C00048
+AGT,kegg:C00041 + kegg:C00048 <=> kegg:C00022 + kegg:C00037
+GPT,kegg:C00025 + kegg:C00022 <=> kegg:C00026 + kegg:C00041
