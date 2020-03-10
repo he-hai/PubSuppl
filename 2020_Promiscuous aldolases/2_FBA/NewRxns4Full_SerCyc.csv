@@ -1,0 +1,8 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+MeDH, methanol dehydrogenase (NAD), meoh_c + nad_c <=> fald_c + nadh_c + h_c, MeDH, -1000, 1000
+SGAT, serine-glyoxylate amino-transferase, ser__L_c + glx_c <=> gly_c + hpyr_c, SerCyc, -1000, 1000
+MTK, Malate thiokinase, mal__L_c + atp_c + coa_c --> malylcoa_c + adp_c + pi_c, SerCyc, 0, 1000
+MCL, malyl-CoA lyase, malylcoa_c --> accoa_c + glx_c, SerCyc, -1000, 1000
+FDH, NAD-dependent formate dehydrogenase, for_c + nad_c --> co2_c + nadh_c, SerCyc, 0, 1000
+EtMaCoA, Crotonyl-CoA to glx and ppcoa, b2coa_c + nadph_c + co2_c + q8_c + h2o_c --> glx_c + ppcoa_c + nadp_c + q8h2_c, Ethylmalonyl-CoA pathway, 0, 1000
+MMCDr, reverse scpB, ppcoa_c + atp_c + hco3_c + h2o_c --> mmcoa__S_c + adp_c + 3 h_c + pi_c, Ethylmalonyl-CoA pathway, 0, 1000

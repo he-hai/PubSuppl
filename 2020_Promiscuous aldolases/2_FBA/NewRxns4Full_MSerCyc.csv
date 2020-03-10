@@ -1,0 +1,6 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+MeDH, methanol dehydrogenase (NAD), meoh_c + nad_c <=> fald_c + nadh_c + h_c, MeDH, -1000, 1000
+MTK, Malate thiokinase, mal__L_c + atp_c + coa_c --> malylcoa_c + adp_c + pi_c, SerCyc, 0, 1000
+MCL, malyl-CoA lyase, malylcoa_c --> accoa_c + glx_c, SerCyc, -1000, 1000
+Agt, Alanine-glyoxylate transaminase, glx_c + ala__L_c <=> pyr_c + gly_c, MSerCyc, -1000, 1000
+FDH, NAD-dependent formate dehydrogenase, for_c + nad_c --> co2_c + nadh_c, SerCyc, 0, 1000

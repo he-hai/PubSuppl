@@ -1,0 +1,6 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+MeDH, methanol dehydrogenase (NAD), meoh_c + nad_c <=> fald_c + nadh_c + h_c, MeDH, -1000, 1000
+SAL, serine aldolase, gly_c + fald_c --> ser__L_c, HomSerCyc, 0, 1000
+HAL, HOB aldolase, pyr_c + fald_c --> hob_c, HomSerCyc, 0, 1000
+HAT, HOB amino-transferase, hob_c + glu__L_c <=> hom__L_c + akg_c, HomSerCyc, 0, 1000
+FDH, NAD-dependent formate dehydrogenase, for_c + nad_c --> co2_c + nadh_c, SerCyc, 0, 1000
