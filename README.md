@@ -1,3 +1,5 @@
+### **\*Currently most outputs in the notebooks are not shown within GitLab, probably because of the [bug #212837](https://gitlab.com/gitlab-org/gitlab/-/issues/212837).***
+
 This is a repository for supplementary scripts and notebooks of publications.
 
 ---
