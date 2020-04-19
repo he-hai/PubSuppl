@@ -2,8 +2,7 @@ This is a repository for supplementary scripts and notebooks of publications.
 
 ---
 ### 0. 0_ecoli_models
-The directory contains *E. coli* genome-scale metabolic model: the core model and the most updated model *i*ML1515, 
-and some notes on the models. 
+The directory contains *E. coli* genome-scale metabolic model: the **core model** and the most updated model ***i*ML1515**, and some notes on the models. 
 
 ### 1. 2020_formaldehyde condensation
 The directory contains Jupyter notebooks of modelling _in vivo_ formaldehyde-THF
