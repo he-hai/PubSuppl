@@ -1,0 +1,19 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+KDC, 2-ketoacid decarboxylase, 3mob_c + h_c -> co2_c + 2mbald_c, isobutanol production, 0, 1000
+IsoBDH, alcohol dehydrogenase, nadh_c + 2mbald_c <=> h_c + nad_c + ibtol_c, isobutanol production, 0, 1000
+EX_ibtol_e, EX isobutanol, ibtol_c -> , isobutanol production, 0, 1000
+ACLDC, Acetolactate decarboxylase, alac__S_c + h_c -> co2_c + actn__R_c, 2_3-butanediol production, 0, 1000
+23BDH, 2_3-butanediol DH, actn__R_c + nadh_c <=> 23btdl_c + nad_c + h_c, 2_3-butanediol production, 0, 1000
+EX_23btdl_e, EX 2_3-butanediol, 23btdl_c -> , 2_3-butanediol production, 0, 1000
+ACACCTr, reversible Acetyl-CoA:acetoacetyl-CoA transferase, acac_c + accoa_c <=> aacoa_c + ac_c, Actone production, -1000, 1000
+actoneBio, actone biosyn, acac_c + h_c --> acetone_c + co2_c, Actone production, 0, 1000
+EX_acetone_e, actone prod, acetone_c --> , Actone production, 0, 1000
+butanolBio, butanol biosyn, 2 accoa_c + 4 nadh_c + 4 h_c --> buoh_c + 4 nad_c + 2 coa_c + h2o_c, 1-butanol production, 0, 1000
+EX_buoh_e, butanol prod, buoh_c --> , 1-butanol production, 0, 1000
+HDCAt, Hexadecanoate transportor, hdca_c --> hdca_e, Hexadecanoate production, 0, 1000
+CAD, cis-aconitic acid decarboxylase, acon_C_c + 3 h_c --> itacon_c + co2_c, itaconate production, 0, 1000
+EX_itacon_e, EX itaconate, itacon_c --> , itaconate production, 0, 1000
+BUTCTr, reversible Acetyl-CoA:butyrate-CoA transferase, accoa_c + but_c <=> ac_c + btcoa_c, butyrate production, -1000, 1000
+3OXCOATr, reversible 3-oxoadipyl-CoA thiolase, aacoa_c + succoa_c <=> oxadpcoa_c + coa_c, levulinic acid production, -1000, 1000
+LevPrd, oxo-adipyl-CoA decarboxylation, oxadpcoa_c + h2o_c + h_c -> levu_c + coa_c + co2_c, levulinic acid production, 0, 1000
+EX_levu_e, EX levulinic acid, levu_c -> , levulinic acid production, 0, 1000
