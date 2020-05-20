@@ -15,4 +15,7 @@ calculations were conducted using [COBRApy](https://doi.org/10.1186/1752-0509-7-
 
 
 ### 2. [2020_Promiscuous aldolases](2020_Promiscuous%20aldolases)
-The directory contains Jupyter notebooks of MDF and FBA modelling of the newly designed formaldehyde assimilation pathway, the homoserine cycle ([He *et al.*, *Metabolic Engineering* 2020](https://doi.org/10.1016/j.ymben.2020.03.002)).
+The directory contains Jupyter notebooks of MDF and FBA modeling of the newly designed formaldehyde assimilation pathway, the homoserine cycle ([He *et al.*, *Metabolic Engineering* 2020](https://doi.org/10.1016/j.ymben.2020.03.002)).
+
+### 3. [2020_GED](2020_GED)
+The directory contains Jupyter notebook of FBA modeling of bioproduction via the newly identified GED (Gnd-Entner-Doudoroff) cycle from CO<sub>2</sub> ([Satanowski *et al.*, *bioRxiv* 2020](https://doi.org/10.1101/2020.05.18.102244)).
