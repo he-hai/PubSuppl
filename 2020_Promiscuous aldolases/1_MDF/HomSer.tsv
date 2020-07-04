@@ -1,0 +1,91 @@
+!!!SBtab DocumentName='Homoserine cycle' SBtabVersion='1.0'			
+!!SBtab TableID='Configuration' TableType='Config'
+!Option	!Value	!Comment	
+algorithm	MDF	ECM, or MDF	
+p_h	7.5		
+ionic_strength	250 mM
+temperature	298.15K
+stdev_factor	1		
+			
+!!SBtab TableID='Reaction' TableType='Reaction'
+!ID	!ReactionFormula
+SAL	glycine + fald <=> serine
+SDH	serine <=> pyr + nh3
+HAL	pyr + fald <=> HOB
+HAT	HOB + glutamate <=> homoserine + akg
+HSK	homoserine + atp <=> o_phospho_l_homoserine + adp
+TS	o_phospho_l_homoserine + h2o <=> threonine + pi
+LTA	threonine <=> acald + glycine
+ADH	acald + nad + coa <=> accoa + nadh
+			
+!!SBtab TableID='Compound' TableType='Compound'			
+!ID	!Identifiers
+h2o	kegg:C00001		
+atp	kegg:C00002		
+nad	kegg:C00003		
+nadh	kegg:C00004		
+nadph	kegg:C00005		
+nadp	kegg:C00006		
+adp	kegg:C00008		
+pi	kegg:C00009		
+coa	kegg:C00010		
+co2	kegg:C00011		
+nh3	kegg:C00014		
+pyr	kegg:C00022		
+accoa	kegg:C00024		
+glutamate	kegg:C00025		
+akg	kegg:C00026		
+glycine	kegg:C00037		
+for	kegg:C00058		
+serine	kegg:C00065		
+fald	kegg:C00067		
+acald	kegg:C00084		
+thf	kegg:C00101		
+mlthf	kegg:C00143		
+threonine	kegg:C00188		
+10fthf	kegg:C00234		
+homoserine	kegg:C00263		
+methf	kegg:C00445		
+o_phospho_l_homoserine	kegg:C01102		
+HOB	metanetx.chemical:MNXM480326		
+			
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'			
+!QuantityType	!Reaction	!Value	
+rate of reaction	SAL	1	
+rate of reaction	SDH	1	
+rate of reaction	HAL	1	
+rate of reaction	HAT	1	
+rate of reaction	HSK	1	
+rate of reaction	TS	1	
+rate of reaction	LTA	1	
+rate of reaction	ADH	1
+			
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'			
+!QuantityType	!Compound	!Min	!Max
+concentration	pi	10	10
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	nadh	0.1	0.1
+concentration	nad	1	1
+concentration	atp	5	5
+concentration	adp	0.5	0.5
+concentration	co2	0.01	0.01
+concentration	nh3	10	10
+concentration	coa	1	1
+concentration	fald	0.001	0.5
+concentration	glutamate	100	100
+concentration	threonine	0.001	10
+concentration	acald	0.001	10
+concentration	HOB	0.001	10
+concentration	for	0.001	10
+concentration	thf	0.001	10
+concentration	methf	0.001	10
+concentration	mlthf	0.001	10
+concentration	10fthf	0.001	10
+concentration	serine	0.001	10
+concentration	pyr	0.001	10
+concentration	glycine	0.001	10
+concentration	o_phospho_l_homoserine	0.001	10
+concentration	homoserine	0.001	10
+concentration	akg	0.5	0.5
+concentration	accoa	0.001	10

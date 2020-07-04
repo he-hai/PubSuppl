@@ -1,0 +1,120 @@
+!!!SBtab DocumentName='Homoserine cycle' SBtabVersion='1.0'			
+!!SBtab TableID='Configuration' TableType='Config'
+!Option	!Value	!Comment	
+algorithm	MDF	ECM, or MDF	
+p_h	7.5		
+ionic_strength	250 mM
+temperature	298.15K
+stdev_factor	1		
+			
+!!SBtab TableID='Reaction' TableType='Reaction'
+!ID	!ReactionFormula
+HPS	fald + ru5p <=> d_arabino_6_phospho_hex_3_ulose
+PHI	d_arabino_6_phospho_hex_3_ulose <=> f6p
+PFK	atp + f6p <=> adp + fbp
+FBA	fbp <=> dhap + gap
+TKT1	f6p + gap <=> xu5p + e4p
+TAL	e4p + f6p <=> gap + s7p
+TKT2	gap + s7p <=> r5p + xu5p
+RPI	r5p <=> ru5p
+RPE	xu5p <=> ru5p
+TPI	dhap <=> gap
+GAP	nad + pi + gap <=> nadh + 13dpg
+			
+!!SBtab TableID='Compound' TableType='Compound'			
+!ID	!Identifiers
+h2o	kegg:C00001		
+atp	kegg:C00002		
+nad	kegg:C00003		
+nadh	kegg:C00004		
+nadph	kegg:C00005		
+nadp	kegg:C00006		
+adp	kegg:C00008		
+pi	kegg:C00009		
+coa	kegg:C00010		
+co2	kegg:C00011		
+nh3	kegg:C00014		
+pyr	kegg:C00022		
+accoa	kegg:C00024		
+glutamate	kegg:C00025		
+akg	kegg:C00026		
+glycine	kegg:C00037		
+for	kegg:C00058		
+serine	kegg:C00065		
+fald	kegg:C00067		
+acald	kegg:C00084		
+thf	kegg:C00101		
+mlthf	kegg:C00143		
+threonine	kegg:C00188		
+10fthf	kegg:C00234		
+homoserine	kegg:C00263		
+methf	kegg:C00445		
+o_phospho_l_homoserine	kegg:C01102		
+HOB	metanetx.chemical:MNXM480326
+ru5p	kegg:C00199
+d_arabino_6_phospho_hex_3_ulose	kegg:C06019
+f6p	kegg:C00085
+fbp	kegg:C00354
+dhap	kegg:C00111
+gap	kegg:C00118
+xu5p	kegg:C00231
+e4p	kegg:C00279
+s7p	kegg:C05382
+r5p	kegg:C00117
+13dpg	kegg:C00236
+			
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'			
+!QuantityType	!Reaction	!Value	
+rate of reaction	HPS	3	
+rate of reaction	PHI	3	
+rate of reaction	PFK	1	
+rate of reaction	FBA	1	
+rate of reaction	TKT1	1	
+rate of reaction	TAL	1	
+rate of reaction	TKT2	1	
+rate of reaction	RPI	1
+rate of reaction	RPE	2
+rate of reaction	TPI	1
+rate of reaction	GAP	1
+			
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'			
+!QuantityType	!Compound	!Min	!Max
+concentration	h2o	1000	1000
+concentration	pi	10	10
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	nadh	0.1	0.1
+concentration	nad	1	1
+concentration	atp	5	5
+concentration	adp	0.5	0.5
+concentration	co2	0.01	0.01
+concentration	nh3	10	10
+concentration	coa	1	1
+concentration	fald	0.001	0.5
+concentration	glutamate	100	100
+concentration	threonine	0.001	10
+concentration	acald	0.001	10
+concentration	HOB	0.001	10
+concentration	for	0.001	10
+concentration	thf	0.001	10
+concentration	methf	0.001	10
+concentration	mlthf	0.001	10
+concentration	10fthf	0.001	10
+concentration	serine	0.001	10
+concentration	pyr	0.001	10
+concentration	glycine	0.001	10
+concentration	o_phospho_l_homoserine	0.001	10
+concentration	homoserine	0.001	10
+concentration	akg	0.5	0.5
+concentration	accoa	0.001	10
+concentration	ru5p	0.001	10
+concentration	d_arabino_6_phospho_hex_3_ulose	0.001	10
+concentration	f6p	0.001	10
+concentration	fbp	0.001	10
+concentration	dhap	0.001	10
+concentration	gap	0.001	10
+concentration	xu5p	0.001	10
+concentration	e4p	0.001	10
+concentration	s7p	0.001	10
+concentration	r5p	0.001	10
+concentration	13dpg	0.001	10

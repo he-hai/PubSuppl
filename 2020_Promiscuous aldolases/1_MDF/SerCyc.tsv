@@ -1,0 +1,120 @@
+!!!SBtab DocumentName='Serine cycle' SBtabVersion='1.0'			
+!!SBtab TableID='Configuration' TableType='Config'
+!Option	!Value	!Comment	
+algorithm	MDF	ECM, or MDF	
+p_h	7.5		
+ionic_strength	250 mM
+temperature	298.15K
+stdev_factor	1
+			
+!!SBtab TableID='Reaction' TableType='Reaction'
+!ID	!ReactionFormula
+FTL	for + thf + atp <=> 10fthf + adp + pi
+MTHFC	10fthf <=> methf + h2o
+MTHFD	methf + nadph <=> mlthf + nadp
+SHMT	mlthf + glycine + h2o <=> serine + thf
+SGAT	serine + glx <=> hydroxypyruvate + glycine
+HPR	hydroxypyruvate + nadh <=> glycerate + nad
+GK	glycerate + atp <=> 2pg + adp
+ENO	2pg <=> pep + h2o
+PPC	pep + co2 + h2o <=> oaa + pi
+MaDH	nadh + oaa <=> nad + malate
+MTK	atp + coa + malate <=> adp + pi + malyl-CoA
+MCL	malyl-CoA <=> accoa + glx
+			
+!!SBtab TableID='Compound' TableType='Compound'			
+!ID	!Identifiers
+h2o	kegg:C00001		
+atp	kegg:C00002		
+nad	kegg:C00003		
+nadh	kegg:C00004		
+nadph	kegg:C00005		
+nadp	kegg:C00006		
+adp	kegg:C00008		
+pi	kegg:C00009		
+coa	kegg:C00010		
+co2	kegg:C00011		
+nh3	kegg:C00014		
+pyr	kegg:C00022		
+accoa	kegg:C00024		
+glutamate	kegg:C00025		
+akg	kegg:C00026		
+glycine	kegg:C00037		
+for	kegg:C00058		
+serine	kegg:C00065		
+fald	kegg:C00067		
+acald	kegg:C00084		
+thf	kegg:C00101		
+mlthf	kegg:C00143		
+threonine	kegg:C00188		
+10fthf	kegg:C00234		
+homoserine	kegg:C00263		
+methf	kegg:C00445		
+o_phospho_l_homoserine	kegg:C01102		
+HOB	metanetx.chemical:MNXM480326
+amp	kegg:C00020
+pep	kegg:C00074
+oaa	kegg:C00036
+malate	kegg:C00149
+malyl-CoA	kegg:C04348
+glx	kegg:C00048
+ala	kegg:C00041
+hydroxypyruvate	kegg:C00168
+glycerate	kegg:C00258
+2pg	kegg:C00631
+			
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'			
+!QuantityType	!Reaction	!Value	
+rate of reaction	FTL	1	
+rate of reaction	MTHFC	1	
+rate of reaction	MTHFD	1	
+rate of reaction	SHMT	1	
+rate of reaction	SGAT	1	
+rate of reaction	HPR	1	
+rate of reaction	GK	1	
+rate of reaction	ENO	1
+rate of reaction	PPC	1
+rate of reaction	MaDH	1
+rate of reaction	MTK	1
+rate of reaction	MCL	1
+			
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'			
+!QuantityType	!Compound	!Min	!Max
+concentration	h2o	1000	1000
+concentration	pi	10	10
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	nadh	0.1	0.1
+concentration	nad	1	1
+concentration	atp	5	5
+concentration	adp	0.5	0.5
+concentration	co2	0.01	0.01
+concentration	nh3	10	10
+concentration	coa	1	1
+concentration	fald	0.001	0.5
+concentration	glutamate	100	100
+concentration	threonine	0.001	10
+concentration	acald	0.001	10
+concentration	HOB	0.001	10
+concentration	for	0.001	10
+concentration	thf	0.001	10
+concentration	methf	0.001	10
+concentration	mlthf	0.001	10
+concentration	10fthf	0.001	10
+concentration	serine	0.001	10
+concentration	pyr	0.001	10
+concentration	glycine	0.001	10
+concentration	o_phospho_l_homoserine	0.001	10
+concentration	homoserine	0.001	10
+concentration	akg	0.5	0.5
+concentration	accoa	0.001	10
+concentration	amp	0.5	0.5
+concentration	pep	0.001	10
+concentration	oaa	0.001	10
+concentration	malate	0.001	10
+concentration	malyl-CoA	0.001	10
+concentration	glx	0.001	10
+concentration	ala	0.001	10
+concentration	hydroxypyruvate	0.001	10
+concentration	glycerate	0.001	10
+concentration	2pg	0.001	10
