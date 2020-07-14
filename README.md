@@ -1,4 +1,5 @@
-This is a repository for supplementary scripts and notebooks of publications.
+This is a repository for supplementary scripts and notebooks of publications.  
+_If GitHub failed to render the Jupyter notebooks, saying 'Sorry, something went wrong. Reload?'. [nbviewer](https://nbviewer.jupyter.org/) could be used by just entering the address there._  
 
 ---
 ### 0. [0_ecoli_models](0_ecoli_models)
