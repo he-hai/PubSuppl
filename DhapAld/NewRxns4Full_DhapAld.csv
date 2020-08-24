@@ -1,6 +1,0 @@
-RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
-MeDH, methanol dehydrogenase (NAD), meoh_c + nad_c <=> fald_c + nadh_c + h_c, MeDH, -1000, 1000
-DhapAld, DhapAld, dhap_c + fald_c <=> d_eryth1p_c, DhapAld, -1000, 1000
-EryC, D-erythrulose 1-phosphate 3-epimerase, d_eryth1p_c <=> l_eryth1p_c, DhapAld, -1000, 1000
-LerI, L-erythrulose-1P isomerase, l_eryth1p_c <=> d_eryth4p_c, DhapAld, -1000, 1000
-DerI, D-erythrulose-4P isomerase, d_eryth4p_c <=> e4p_c, DhapAld, -1000, 1000
