@@ -1,0 +1,101 @@
+!!!SBtab DocumentName='Homoserine cycle' SBtabVersion='1.0'			
+!!SBtab TableID='Configuration' TableType='Config'
+!Option	!Value	!Comment	
+algorithm	MDF	ECM, or MDF	
+p_h	7	
+ionic_strength	250 mM
+temperature	298.15K
+p_mg	3
+stdev_factor	0		
+			
+!!SBtab TableID='Reaction' TableType='Reaction'
+!ID	!ReactionFormula
+RBPC	co2 + h2o + rb15bp -> 2 3pg
+PGK	3pg + atp -> 13dpg + adp
+GAPDH	13dpg + nadph <=> g3p + nadp + pi
+TPI	g3p <=> dhap
+FBA	g3p + dhap <=> fdp
+FBP	fdp + h2o -> f6p + pi
+TKT1	g3p + f6p <=> e4p + xu5p
+FBP3	e4p + dhap <=> s17bp
+SBP	s17bp + h2o -> s7p + pi
+TKT2	g3p + s7p <=> r5p + xu5p
+RPE	xu5p <=> ru5p
+RPI	r5p <=> ru5p
+PRK	ru5p + atp -> rb15bp + adp
+			
+!!SBtab TableID='Compound' TableType='Compound'			
+!ID	!Identifiers
+h2o	kegg:C00001		
+atp	kegg:C00002		
+nadph	kegg:C00005		
+nadp	kegg:C00006		
+adp	kegg:C00008		
+pi	kegg:C00009		
+co2	kegg:C00011		
+ru5p	kegg:C00199
+f6p	kegg:C00085
+fdp	kegg:C00354
+dhap	kegg:C00111
+g3p	kegg:C00118
+xu5p	kegg:C00231
+e4p	kegg:C00279
+s7p	kegg:C05382
+r5p	kegg:C00117
+13dpg	kegg:C00236
+rb15bp	kegg:C01182
+3pg	kegg:C00197
+o2	kegg:C00007
+2pglyc	kegg:C00988
+s17bp	kegg:C00447
+s7p	kegg:C05382
+			
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'			
+!QuantityType	!Reaction	!Value	
+rate of reaction	RBPC	3
+rate of reaction	PGK	5
+rate of reaction	GAPDH	5
+rate of reaction	TPI	2
+rate of reaction	FBA	1
+rate of reaction	FBP	1
+rate of reaction	TKT1	1	
+rate of reaction	FBP3	1
+rate of reaction	SBP	1
+rate of reaction	TKT2	1
+rate of reaction	RPE	2
+rate of reaction	RPI	1
+rate of reaction	PRK	3
+			
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'			
+!QuantityType	!Compound	!Min	!Max
+concentration	h2o	55000	55000
+concentration	pi	10	10
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	nadh	0.1	0.1
+concentration	nad	1	1
+concentration	atp	5	5
+concentration	adp	0.5	0.5
+concentration	co2	0.01	0.01
+concentration	nh3	10	10
+concentration	coa	1	1
+concentration	pyr	0.001	10
+concentration	akg	0.5	0.5
+concentration	accoa	0.001	10
+concentration	f6p	0.001	10
+concentration	fdp	0.001	10
+concentration	dhap	0.001	10
+concentration	gap	0.001	10
+concentration	xu5p	0.001	10
+concentration	e4p	0.001	10
+concentration	s7p	0.001	10
+concentration	r5p	0.001	10
+concentration	ru5p	0.001	10
+concentration	g3p	0.001	10
+concentration	13dpg	0.001	10
+concentration	rb15bp	0.001	10
+concentration	3pg	0.001	10
+concentration	o2	0.001	10
+concentration	2pglyc	0.001	10
+concentration	s17bp	0.001	10
+concentration	s7p	0.001	10

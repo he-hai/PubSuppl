@@ -1,0 +1,71 @@
+!!!SBtab DocumentName='Tartronyl-CoA module' SBtabVersion='1.0'				
+!!SBtab TableID='Configuration' TableType='Config'				
+!Option	!Value	!Comment		
+algorithm	MDF	ECM, or MDF		
+p_h	7
+ionic_strength	250 mM	
+temperature	298.15K		
+p_mg	3			
+stdev_factor	0			
+				
+!!SBtab TableID='Reaction' TableType='Reaction'				
+!ID	!ReactionFormula			
+GCS	glyclt + coa + atp -> glyccoa + amp + ppi			
+GCC	glyccoa + atp + co2 + h2o -> tarcoa + adp + pi			
+TCR1	tarcoa + nadph -> 2h3oppan + nadp + coa			
+TCR2	2h3oppan + nadph -> glyc + nadp			
+GLYCK	glyc + atp -> 3pg + adp			
+				
+!!SBtab TableID='Compound' TableType='Compound'				
+!ID	!Identifiers			
+h2o	kegg:C00001			
+2pglyc	kegg:C00988			
+glyclt	kegg:C00160			
+pi	kegg:C00009			
+coa	kegg:C00010			
+atp	kegg:C00002			
+amp	kegg:C00020			
+ppi	kegg:C00013			
+hco3	kegg:C00288			
+glyccoa	bigg.metabolite:accoa			
+tarcoa	bigg.metabolite:succoa			
+adp	kegg:C00008			
+nadph	kegg:C00005			
+nadp	kegg:C00006			
+2h3oppan	kegg:C01146			
+nad	kegg:C00003			
+nadh	kegg:C00004			
+glyc	kegg:C00258			
+3pg	kegg:C00197			
+co2	kegg:C00011
+				
+				
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'				
+!QuantityType	!Reaction	!Value		
+rate of reaction	GCS	1		
+rate of reaction	GCC	1		
+rate of reaction	TCR1	1		
+rate of reaction	TCR2	1		
+rate of reaction	GLYCK	1		
+				
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'				
+!QuantityType	!Compound	!Min	!Max	
+concentration	nadh	0.1	0.1	
+concentration	nad	1	1
+concentration	2pglyc	0.001	10	
+concentration	glyclt	0.001	10	
+concentration	pi	10	10	
+concentration	coa	1	1	
+concentration	atp	10	10	
+concentration	adp	1	1	
+concentration	amp	1	1	
+concentration	ppi	1	1	
+concentration	glyccoa	0.001	10	
+concentration	tarcoa	0.001	10	
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	2h3oppan	0.001	10	
+concentration	glyc	0.001	10	
+concentration	3pg	0.001	10	
+concentration	h2o	55000	55000	
+concentration	co2	0.01	0.01
