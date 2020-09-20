@@ -1,0 +1,6 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+PGLYCP,Phosphoglycolate phosphatase,2pglyc + h2o -> glyclt + pi,d_arabinose-5-phosphate shunt,0,1000
+GCS,glycolyl-CoA synthetase,glyclt + coa + atp -> glyccoa + amp + ppi,d_arabinose-5-phosphate shunt,0,1000
+GLCR,glycolyl-CoA reductase,glyccoa + nadph -> gcald + nadp + coa,d_arabinose-5-phosphate shunt,0,1000
+ARAS,Fructose-6-phosphate aldolase,gcald + g3p -> ara5p,d_arabinose-5-phosphate shunt,0,1000
+A5PISO,Arabinose-5-phosphate isomerase,ara5p <=> ru5p,d_arabinose-5-phosphate shunt,-1000,1000

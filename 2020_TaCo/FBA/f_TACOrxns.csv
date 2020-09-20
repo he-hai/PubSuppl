@@ -1,0 +1,7 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+PGLYCP,Phosphoglycolate phosphatase,2pglyc + h2o -> glyclt + pi,f_tartronyl-CoA pathway, 0, 1000
+GCS,glycolyl-CoA synthetase,glyclt + coa + atp -> glyccoa + amp + ppi,f_tartronyl-CoA pathway, 0, 1000
+GCC,glycolyl-CoA carboxylase,glyccoa + atp + hco3 -> tarcoa + adp + pi,f_tartronyl-CoA pathway, 0, 1000
+TCR1,tartronyl-CoA reductase,tarcoa + nadph -> 2h3oppan + nadp + coa,f_tartronyl-CoA pathway, 0, 1000
+TCR2,Tartronate semialdehyde reductase,2h3oppan + h + nadph -> glyc + nadp,f_tartronyl-CoA pathway, 0, 1000
+GLYCK,glycerate kinase,glyc + atp -> 3pg + adp + h,f_tartronyl-CoA pathway, 0, 1000

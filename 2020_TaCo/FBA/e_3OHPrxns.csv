@@ -1,0 +1,12 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+PGLYCP,Phosphoglycolate phosphatase,2pglyc + h2o -> glyclt + pi,e_3-OH-proionate bypass,0,1000
+GLYCLTD,glycolate dehydrogenase,glyclt + nad -> glx + nadh + h,e_3-OH-proionate bypass,0,1000
+MCL1,methylmalyl-CoA lyase,glx + ppcoa -> mmcoa,e_3-OH-proionate bypass,0,1000
+MM2Cit,step 4 to 6,mmcoa -> citmcoa,e_3-OH-proionate bypass,0,1000
+MCL2,citramalyl-CoA lyase,citmcoa -> pyr + accoa,e_3-OH-proionate bypass,0,1000
+ACCOAC,acetyl-CoA carboxylase,accoa + atp + hco3 -> adp + h + malcoa + pi,e_3-OH-proionate bypass,0,1000
+MALR,malonyl-CoA reductase,malcoa + 2 nadph + 2 h -> 3hpp + 2 nadp + coa,e_3-OH-proionate bypass,0,1000
+PPCS,propionyl-CoA synthetase,3hpp + nadph + atp + coa -> ppcoa + nadp + amp + ppi,e_3-OH-proionate bypass,0,1000
+PPDK,pyruvate-phosphate dikinase,pyr + atp + pi -> amp + pep + ppi,e_3-OH-proionate bypass,0,1000
+ENO,enolase,pep + h2o -> 2pg,e_3-OH-proionate bypass,0,1000
+PGM,phosphoglycerate mutase,2pg -> 3pg,e_3-OH-proionate bypass,0,1000

@@ -1,0 +1,7 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+PGLYCP,Phosphoglycolate phosphatase,2pglyc + h2o -> glyclt + pi,c_glycolate oxidation pathway,0,1000
+GLYCTO,glycolate oxidase,glyclt + o2 -> glx + h2o2,c_glycolate oxidation pathway,0,1000
+CAT,Catalase,2 h2o2 -> 2 h2o + o2,c_glycolate oxidation pathway,0,1000
+MALS,malate synthase,accoa + glx + h2o -> mal + coa + h,c_glycolate oxidation pathway,0,1000
+ME,malic enzyme,mal + nad -> pyr + nadh + co2,c_glycolate oxidation pathway,0,1000
+PDH,pyruvate dehydrogenase,pyr + nad + coa -> accoa + nadh + co2,c_glycolate oxidation pathway,0,1000

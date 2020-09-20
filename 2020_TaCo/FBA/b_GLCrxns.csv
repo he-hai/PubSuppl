@@ -1,0 +1,6 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+PGLYCP,Phosphoglycolate phosphatase,2pglyc + h2o -> glyclt + pi,b_glycerate bypass, 0, 1000
+GLYCLTD,glycolate dehydrogenase,glyclt + nad -> glx + nadh + h,b_glycerate bypass, 0, 1000
+GLXCL,glyoxylate carboligase,2 glx + h -> 2h3oppan + co2,b_glycerate bypass, 0, 1000
+TRSARr,Tartronate semialdehyde reductase, 2h3oppan + h + nadh -> glyc + nad, b_glycerate bypass, 0, 1000
+GLYCK,glycerate kinase,glyc + atp -> 3pg + adp + h,b_glycerate bypass, 0, 1000
