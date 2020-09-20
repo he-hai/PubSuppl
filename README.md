@@ -23,3 +23,5 @@ The directory contains Jupyter notebook of FBA modeling of bioproduction via the
 
 ### 4. [2020_Energy_Auxotroph](2020_Energy_Auxotroph/LPD_FBA.ipynb)
 The directory contains Jupyter notebook of FBA modeling of different NADH producing routes within a “energy-auxotroph” strain, _&Delta;lpd_ strain ([Wenk & Schann *et al.*, *Biotechnology & Bioengineering* 2020](https://doi.org/10.1002/bit.27490)).
+
+### 5. [2020_TaCo](2020_TaCO)
