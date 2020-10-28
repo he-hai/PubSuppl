@@ -9,3 +9,5 @@
 * Homoserine dehydrogenase (HSDy) produces homoserine from aspartate-semialdehyde irreversibly ([He et al., *Metabolic Engineering* 2020](https://doi.org/10.1016/j.ymben.2020.03.002)).
 * Glucose dehydrogenase (GLCDpp) needs pyrroloquinoline quinone (PQQ) to work ([Adamowicz et al., *Appl Environ Microbiol* 1991](https://www.ncbi.nlm.nih.gov/pubmed/1654044)).
 * Pyruvate formate lyase (PFL) is active under anaeroboic condition. The same to 2-Oxobutanoate formate lyase (OBTFL).
+
+* Same to GarK (GLYCK2), GlxK encoded glycerate kinase (GLYCK) produces 2-phosphoglycerate (2pg), not 3-phosphoglycerate ([Zelcbuch et al., *PloS One* 2015](https://doi.org/10.1371/journal.pone.0122957)).
