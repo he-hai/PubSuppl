@@ -10,7 +10,7 @@ import seaborn as sns
 plt.rcParams["font.family"] = "Arial"
 plt.rcParams['ytick.labelsize'] = 15
 plt.rcParams['xtick.labelsize'] = 15
-plt.rcParams['axes.titlesize'] = 24
+plt.rcParams['axes.titlesize'] = 20
 plt.rcParams['axes.labelsize'] = 18
 plt.rcParams['legend.title_fontsize'] = 15
 plt.rcParams['legend.fontsize'] = 13
@@ -230,10 +230,18 @@ sns.lineplot(
     x='Growth rate',y='Formate uptake',data=FA,
     ax=ax[0],marker='o',
 )
+ax[0].fill_between(
+    x=FA['Growth rate'],y1=100,y2=FA['Formate uptake'],
+    facecolor='b', alpha=0.5
+)
 
 sns.lineplot(
     x='Growth rate',y='Formate uptake',data=FA_G,
     ax=ax[1],marker='o',
+)
+ax[1].fill_between(
+    x=FA_G['Growth rate'],y1=100,y2=FA_G['Formate uptake'],
+    facecolor='b', alpha=0.5
 )
 
 plt.setp(
@@ -241,7 +249,7 @@ plt.setp(
     xlabel='Growth rate (1/h)',
     ylabel='Formate uptake rate (mmol/gCDW/h)'
 )
-ax[0].set_title(f'Formate soly \n slope={slope_FA:.2f} mmol/gCDW')
+ax[0].set_title(f'Formate \n slope={slope_FA:.2f} mmol/gCDW')
 ax[1].set_title(f'Formate + glycine \n slope={slope_FA_G:.2f} mmol/gCDW')
 plt.savefig('Formate dependency.png')
 # %%
