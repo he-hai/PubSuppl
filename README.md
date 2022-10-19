@@ -28,4 +28,4 @@ The directory contains Jupyter notebook of FBA modeling of different NADH produc
 The directory contains Jupyter notebooks of FBA and MDF modeling of the tartronyl-CoA (TaCo) pathway, a new-to-nature carboxylation pathway ([Scheffen *et al.*, *Nature Catalysis* 2021](https://doi.org/10.1038/s41929-020-00557-y)).
 
 ### 6. [2022_STC](2022_STC)
-The directory contains Jupyter notebooks of FBA modeling of the serine threonine cycle (STC), a autocatalytic C1 assimilation pathway ([Wenk *et al.*, *bioRxiv* 2022](https://www.biorxiv.org/content/10.1101/2022.09.28.509898v1)).
+The directory contains Jupyter notebook of FBA modeling of the serine threonine cycle (STC), an autocatalytic C1 assimilation pathway ([Wenk *et al.*, *bioRxiv* 2022](https://www.biorxiv.org/content/10.1101/2022.09.28.509898v1)).
