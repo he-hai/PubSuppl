@@ -1,0 +1,117 @@
+!!!SBtab DocumentName='EuMP cycle' SBtabVersion='1.0'			
+!!SBtab TableID='Configuration' TableType='Config'
+!Option	!Value	!Comment	
+algorithm	MDF	ECM, or MDF	
+p_h	7.5		
+ionic_strength	250 mM
+temperature	298.15 K
+p_mg	3
+dg_confidence	0.95	default, [0,1)	
+			
+!!SBtab TableID='Reaction' TableType='Reaction'
+!ID	!ReactionFormula
+EPS	fald + dhap <=> lEu1P
+LerI	lEu1P <=> dEu4P
+DerI	dEu4P <=> e4p
+TKT1	xu5p + e4p <=> f6p + gap 
+PFK	atp + f6p <=> adp + fbp
+FBA	fbp <=> dhap + gap
+TAL	e4p + f6p <=> gap + s7p
+TKT2	gap + s7p <=> r5p + xu5p
+RPI	r5p <=> ru5p
+RPE	ru5p <=> xu5p
+TPI	gap <=> dhap
+			
+!!SBtab TableID='Compound' TableType='Compound'			
+!ID	!Identifiers
+atp	kegg:C00002		
+nad	kegg:C00003		
+nadh	kegg:C00004		
+nadph	kegg:C00005		
+nadp	kegg:C00006		
+adp	kegg:C00008		
+pi	kegg:C00009		
+coa	kegg:C00010		
+co2	kegg:C00011		
+nh3	kegg:C00014		
+pyr	kegg:C00022		
+accoa	kegg:C00024		
+glutamate	kegg:C00025		
+akg	kegg:C00026		
+glycine	kegg:C00037		
+for	kegg:C00058		
+serine	kegg:C00065		
+fald	kegg:C00067		
+acald	kegg:C00084		
+thf	kegg:C00101		
+mlthf	kegg:C00143		
+threonine	kegg:C00188		
+10fthf	kegg:C00234		
+methf	kegg:C00445		
+ru5p	kegg:C00199
+f6p	kegg:C00085
+fbp	kegg:C00354
+dhap	kegg:C00111
+gap	kegg:C00118
+xu5p	kegg:C00231
+e4p	kegg:C00279
+s7p	kegg:C05382
+r5p	kegg:C00117
+13dpg	kegg:C00236
+dEu1P	CHEBI:48262
+lEu1P	CHEBI:17063
+dEu4P	CHEBI:4116
+			
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'			
+!QuantityType	!Reaction	!Value	
+rate of reaction	EPS	3	
+rate of reaction	LerI	3
+rate of reaction	DerI	3
+rate of reaction	TKT1	2
+rate of reaction	PFK	1	
+rate of reaction	FBA	1	
+rate of reaction	TAL	1	
+rate of reaction	TKT2	1	
+rate of reaction	RPI	1
+rate of reaction	RPE	1
+rate of reaction	TPI	2
+			
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'			
+!QuantityType	!Compound	!Min	!Max
+concentration	pi	10	10
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	nadh	0.1	0.1
+concentration	nad	1	1
+concentration	atp	5	5
+concentration	adp	0.5	0.5
+concentration	co2	0.01	0.01
+concentration	nh3	10	10
+concentration	coa	1	1
+concentration	fald	0.001	0.5
+concentration	glutamate	100	100
+concentration	threonine	0.001	10
+concentration	acald	0.001	10
+concentration	for	0.001	10
+concentration	thf	0.001	10
+concentration	methf	0.001	10
+concentration	mlthf	0.001	10
+concentration	10fthf	0.001	10
+concentration	serine	0.001	10
+concentration	pyr	0.001	10
+concentration	glycine	0.001	10
+concentration	akg	0.5	0.5
+concentration	accoa	0.001	10
+concentration	ru5p	0.001	10
+concentration	f6p	0.001	10
+concentration	fbp	0.001	10
+concentration	dhap	0.001	10
+concentration	gap	0.001	10
+concentration	xu5p	0.001	10
+concentration	e4p	0.001	10
+concentration	s7p	0.001	10
+concentration	r5p	0.001	10
+concentration	13dpg	0.001	10
+concentration	dEu1P	0.001	10
+concentration	lEu1P	0.001	10
+concentration	dEu4P	0.001	10

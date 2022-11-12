@@ -1,0 +1,3 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+HPS, HPS, fald_c + ru5p__D_c <=> h6p_c, RuMP, -1000, 1000
+PHI, PHI, h6p_c <=> f6p_c, RuMP, -1000, 1000

@@ -1,0 +1,4 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+EPS, D-erythrulose 1-phosphate synthase, dhap_c + fald_c <=> lEu1P_c, EuMP, -1000, 1000
+LerI, L-erythrulose-1P isomerase, lEu1P_c <=> dEu4P_c, EuMP, -1000, 1000
+DerI, D-erythrulose-4P isomerase, dEu4P_c <=> e4p_c, EuMP, -1000, 1000

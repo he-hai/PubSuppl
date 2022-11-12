@@ -1,0 +1,3 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+DAS, DAS, fald_c + xu5p__D_c <=> g3p_c + dha_c, XuMP, -1000, 1000
+DHAK, DHAK, dha_c + atp_c <=> dhap_c + adp_c, RuMP, -1000, 1000
