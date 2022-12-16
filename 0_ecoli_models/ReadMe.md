@@ -13,3 +13,4 @@
 * Tryptophanase (TRPAS2, tnaA) should be irreversible. Although the reaction is reversible under high pyruvate and ammonia condition ([Watanabe & Snell, *PNAS* 1972](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC426635/)), such condition is likely not existing *in vivo*.   
 * Isocitrate lyase (ICL) should be reversible ([MacKintosh & Nimmo, *Biochem J* 1988](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1148809/)).  
 * Gene-Protein-Reaction associations of TYRL (tyrosine lyase) and THZPSN3 (thiazole phosphate synthesis) should be exchanged to each other ([Jurgenson et al., *Annu Rev Biochem* 2009](https://doi.org/10.1146/annurev.biochem.78.072407.102340)).  
+* TRPS1 = TRPS3 + TRPS2. TrpA & TrpB protein, subunits of the tryptophan synthase. Because the two reaction steps are channeled between the two subunits ([Lane & Kirschner, *Biochemistry* 1991](https://pubmed.ncbi.nlm.nih.gov/1899028/)), TRPS3 & TRPS2 may be removed from the model.  
