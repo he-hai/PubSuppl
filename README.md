@@ -29,3 +29,6 @@ The directory contains Jupyter notebooks of FBA and MDF modeling of the tartrony
 
 ### 6. [2022_STC](2022_STC)
 The directory contains Jupyter notebook of FBA modeling of the serine threonine cycle (STC), an autocatalytic C1 assimilation pathway ([Wenk *et al.*, *bioRxiv* 2022](https://www.biorxiv.org/content/10.1101/2022.09.28.509898v1)).
+
+### 7. [2022_formate_reduction](2022_formate_reduction)  
+The directory contains scripts and models for MDF and FBA modeling of different formate reduction routes. 

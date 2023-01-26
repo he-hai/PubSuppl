@@ -1,0 +1,3 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+FCS, formyl-CoA synthase, for_c + atp_c + coa_c -> forcoa_c + amp_c + ppi_c, CoA, 0, 1000
+FCR, formyl-CoA reductase (NADPH), forcoa_c + nadph_c + h_c <=> fald_c + coa_c + nadp_c, CoA, -1000, 1000

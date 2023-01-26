@@ -1,0 +1,2 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+ThfS, methylene-THF spontaneous hydrolysis, mlthf_c + h2o_c <-> fald_c + thf_c, THF, -1000, 1000

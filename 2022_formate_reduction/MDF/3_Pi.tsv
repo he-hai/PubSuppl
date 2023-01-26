@@ -1,0 +1,60 @@
+!!!SBtab DocumentName='formate reduction via Pi' SBtabVersion='1.0'				
+!!SBtab TableID='Configuration' TableType='Config'				
+!Option	!Value	!Comment		
+algorithm	MDF	ECM, or MDF		
+p_h	7
+ionic_strength	250 mM	
+temperature	298.15K		
+p_mg	3			
+dg_confidence	0.95	default, [0,1)	
+				
+!!SBtab TableID='Reaction' TableType='Reaction'				
+!ID	!ReactionFormula			
+FPK	for + atp = forp + adp
+FPR	forp + nadph = fald + nadp + pi
+			
+!!SBtab TableID='Compound' TableType='Compound'				
+!ID	!Identifiers			
+h2o	kegg:C00001			
+pi	kegg:C00009			
+coa	kegg:C00010			
+atp	kegg:C00002			
+amp	kegg:C00020			
+ppi	kegg:C00013			
+adp	kegg:C00008			
+nadph	kegg:C00005			
+nadp	kegg:C00006			
+nad	kegg:C00003			
+nadh	kegg:C00004			
+10fthf	kegg:C00234
+thf	kegg:C00101
+mlthf	kegg:C00143
+for	kegg:C00058
+fald	kegg:C00067
+forp	kegg:C02405
+
+				
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'				
+!QuantityType	!Reaction	!Value		
+rate of reaction	FPK	1		
+rate of reaction	FPR	1		
+
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'				
+!QuantityType	!Compound	!Min	!Max	
+concentration	nadh	0.1	0.1	
+concentration	nad	1	1
+concentration	pi	10	10	
+concentration	coa	1	1	
+concentration	atp	10	10	
+concentration	adp	1	1	
+concentration	amp	1	1	
+concentration	ppi	1	1	
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	for	0.001	10
+concentration	thf	0.001	10
+concentration	mlthf	0.001	10
+concentration	10fthf	0.001	10
+concentration	fald	0.001	0.5
+concentration	forp	0.001	10
+concentration	forcoa	0.001	10
