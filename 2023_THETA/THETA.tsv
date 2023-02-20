@@ -1,0 +1,136 @@
+!!!SBtab DocumentName='THETA' SBtabVersion='1.0'			
+!!SBtab TableID='Configuration' TableType='Config'
+!Option	!Value	!Comment	
+algorithm	MDF	ECM, or MDF	
+p_h	7
+ionic_strength	250 mM
+temperature	298.15K
+p_mg	3
+dg_confidence	0.95	default, [0,1)
+			
+!!SBtab TableID='Reaction' TableType='Reaction'
+!ID	!ReactionFormula
+PPS	pyr + atp + h2o = pep + amp + pi
+PPC	pep + co2 + h2o = oaa + pi
+MDH	oaa + nadh = mal + nad
+FUM	mal = fum + h2o
+FRD	fum + nadh -> succ + nad
+SucCD	succ + atp + coa = succoa + adp + pi 
+SCR	succoa + nadph = sucsal + nadp + coa 
+SSR	sucsal + nadph = h4but + nadp
+HBS	h4but + atp + coa = 4hbutcoa + adp + pi
+HBD	4hbutcoa = b2coa + h2o
+CCR	b2coa + co2 + nadph = ethmalcoa__S + nadp 
+EPI	ethmalcoa__S = ethmalcoa__R
+ECM	ethmalcoa__R = methsuccoa__S
+MCD	methsuccoa__S + uq = mescoa_C1 + uqh2
+MCT	mescoa_C1 = mescoa_C4
+MEH	mescoa_C4 + h2o = citmcoa
+CCL	citmcoa = pyr + accoa
+			
+!!SBtab TableID='Compound' TableType='Compound'			
+!ID	!Identifiers
+h2o	kegg:C00001		
+atp	kegg:C00002	
+amp	kegg:C00020
+nadph	kegg:C00005		
+nadp	kegg:C00006	
+nadh	kegg:C00004
+nad	kegg:C00003
+adp	kegg:C00008		
+pi	kegg:C00009	
+ppi	kegg:C00013	
+co2	kegg:C00011	
+hco3	kegg:C00288
+coa	kegg:C00010
+accoa	kegg:C00024
+pyr	kegg:C00022
+pep	kegg:C00074
+oaa	kegg:C00036
+mal	kegg:C00149
+fum	kegg:C00122
+succ	kegg:C00042
+fadh2	kegg:C01352
+fad	kegg:C00016
+succoa	kegg:C00091
+sucsal	kegg:C00232
+h4but	kegg:C00989
+4hbutcoa	kegg:C11062
+b2coa	kegg:C00877
+ethmalcoa__S	kegg:C18026
+ethmalcoa__R	kegg:C20238
+methsuccoa__S	kegg:C18324
+mescoa_C1	kegg:C06028
+mescoa_C4	kegg:C18323
+citmcoa	kegg:C01011
+aacoa	kegg:C00332
+3hbcoa__R	kegg:C03561
+uq	kegg:C00399 
+uqh2	kegg:C00390
+			
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'			
+!QuantityType	!Reaction	!Value	
+rate of reaction	PPS	1
+rate of reaction	PPC	1
+rate of reaction	MDH	1
+rate of reaction	FUM	1
+rate of reaction	FRD	1
+rate of reaction	SucCD	1
+rate of reaction	SCR	1
+rate of reaction	SSR	1
+rate of reaction	HBS	1
+rate of reaction	HBD	1
+rate of reaction	CCR	1
+rate of reaction	EPI	1
+rate of reaction	ECM	1
+rate of reaction	MCD	1
+rate of reaction	MCT	1
+rate of reaction	MEH	1
+rate of reaction	CCL	1
+			
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'			
+!QuantityType	!Compound	!Min	!Max
+concentration	pi	10	10
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	nadh	0.1	0.1
+concentration	nad	1	1
+concentration	atp	5	5
+concentration	adp	0.5	0.5
+concentration	co2	0.01	0.01
+concentration	nh3	10	10
+concentration	coa	1	1
+concentration	pyr	0.001	10
+concentration	akg	0.5	0.5
+concentration	accoa	0.001	10
+concentration	f6p	0.001	10
+concentration	fdp	0.001	10
+concentration	dhap	0.001	10
+concentration	gap	0.001	10
+concentration	xu5p	0.001	10
+concentration	e4p	0.001	10
+concentration	s7p	0.001	10
+concentration	r5p	0.001	10
+concentration	ru5p	0.001	10
+concentration	g3p	0.001	10
+concentration	13dpg	0.001	10
+concentration	rb15bp	0.001	10
+concentration	3pg	0.001	10
+concentration	o2	0.001	10
+concentration	2pglyc	0.001	10
+concentration	s17bp	0.001	10
+concentration	s7p	0.001	10
+concentration	glyc	0.001	10
+concentration	2h3op5p	0.001	10
+concentration	ep3u1p	0.001	10
+concentration	glyclt	0.001	10	
+concentration	4per	0.001	10	
+concentration	2pglyc	0.001	10	
+concentration	amp	1	1	
+concentration	ppi	1	1	
+concentration	glyccoa	0.001	10	
+concentration	tarcoa	0.001	10	
+concentration	2h3oppan	0.001	10
+concentration	14per	0.001	10
+concentration	uq	1	1
+concentration	uqh2	1	1
