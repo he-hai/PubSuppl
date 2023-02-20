@@ -32,3 +32,6 @@ The directory contains Jupyter notebook of FBA modeling of the serine threonine 
 
 ### 7. [2022_formate_reduction](2022_formate_reduction)  
 The directory contains scripts and models for MDF and FBA modeling of different formate reduction routes. 
+
+### 8. [2023_THETA](2023_THETA)  
+The directory contains scripts and models for MDF analysis of the THETA cycle. 
