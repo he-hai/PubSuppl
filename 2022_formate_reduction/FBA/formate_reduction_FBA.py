@@ -165,7 +165,7 @@ for psw, pswrxns in psws.items():
                 nadph_results.loc[precursor, psw] = sol
 
 nadph_results
-
+nadph_results.to_excel('formate reduction_FBA_nadph.xlsx')
 # %% [markdown]
 # change to be NADH dependent 
 # %%
@@ -203,7 +203,7 @@ for psw, pswrxns in psws.items():
                 nadh_results.loc[precursor, psw] = sol
 
 nadh_results
-
+nadh_results.to_excel('formate reduction_FBA_nadh.xlsx')
 # %%
 import matplotlib.pyplot as plt 
 
