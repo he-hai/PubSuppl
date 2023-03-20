@@ -82,6 +82,7 @@ for psw in psws:
     model = loadModel(psw)
     for i in mdf_for.index: 
         mdf_for.loc[i,psw]=MDF_ub(model, 'for', mdf_for['for_ub'][i])
+mdf_for.to_excel('formate reduction_MDF.xlsx')
 # %%    
 fig, ax = plt.subplots()
 mdf_for.plot(x='for_ub', ax=ax)
