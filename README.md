@@ -34,4 +34,7 @@ The directory contains Jupyter notebook of FBA modeling of the serine threonine 
 The directory contains scripts and models for MDF and FBA modeling of different formate reduction routes ([Nattermann *et al.*, *Nature Communications* 2023](https://www.nature.com/articles/s41467-023-38072-w)). The freezed version for the publication was also deposited on [Zenodo](https://doi.org/10.5281/zenodo.7752828)
 
 ### 8. [2023_THETA](2023_THETA)  
-The directory contains scripts and models for MDF analysis of the THETA cycle. 
+The directory contains scripts and models for MDF analysis of the THETA cycle.   
+
+### 9. [2023_FALD_sensors](2023_FALD_sensors)   
+The directory contains scripts and models for estimation of formaldehyde dependencies of formaldehyde metabolic sensors ([Schann *et al.*, *bioRxiv* 2023](https://www.biorxiv.org/content/10.1101/2023.06.29.547045v1)).
