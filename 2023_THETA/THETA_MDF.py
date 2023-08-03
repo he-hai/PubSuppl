@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 print('equlibrator_api version:', equilibrator_api.__version__)
 print('equlibrator_pathway version:', equilibrator_pathway.__version__)
 
+import warnings
+warnings.filterwarnings('ignore')
+
 ureg.default_format = ".2f~P"
 plt.rc('axes', axisbelow=True)
 ureg.setup_matplotlib(True)
@@ -31,11 +34,23 @@ mdf_result_THETA = THETA.mdf_analysis()
 
 mdf_result_THETA.reaction_df
 
+# %% 
+print(f"physiological_dg_prime of overall reaction:",
+    f"{mdf_result_THETA.reaction_df['physiological_dg_prime'].sum()}")
+
+print(f"optimized_dg_prime of overall reaction:",
+    f"{mdf_result_THETA.reaction_df['optimized_dg_prime'].sum()}")
+
 # %%
 fig, ax = plt.subplots(1, 1, figsize=(10, 5))
 mdf_result_THETA.plot_driving_forces(ax)
 ax.grid('on')
 fig.savefig('mdf_result_THETA_ambient.eps')
+
+# %%
+mdf_result_THETA.compound_df
+
 #%%
 fig, ax = plt.subplots(1, 1, figsize=(10, 15))
 mdf_result_THETA.plot_concentrations(ax)
+fig.savefig('mdf_result_THETA_cpd.eps')
