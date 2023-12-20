@@ -38,3 +38,6 @@ The directory contains scripts and models for MDF analysis of the THETA cycle ([
 
 ### 9. [2023_FALD_sensors](2023_FALD_sensors)   
 The directory contains scripts and models for estimation of formaldehyde dependencies of formaldehyde metabolic sensors ([Schann *et al.*, *bioRxiv* 2023](https://www.biorxiv.org/content/10.1101/2023.06.29.547045v1)).
+
+### 10. [2022_EuMP](2022_EuMP)   
+The directory contains Jupyter notebooks of FBA and MDF modeling of the Erythrulose MonoPhosphate (EuMP) cycle, a new-to-nature C1/formaldehyde assimilation pathway ([Wu *et al.*, *Nature Communications* 2023](https://doi.org/10.1038/s41467-023-44247-2)). The freezed version for the publication was also deposited on [Zenodo](https://doi.org/10.5281/zenodo.10207936).
