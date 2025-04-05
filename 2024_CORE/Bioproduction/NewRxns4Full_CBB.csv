@@ -1,0 +1,4 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+PRK,Phosphoribulokinase,ru5p__D_c + atp_c -> rb15bp_c + adp_c + h_c,CBB,0,1000
+RBPC,Ribulose-bisphosphate carboxylase,co2_c + h2o_c + rb15bp_c -> 2 3pg_c + 2 h_c,CBB,0,1000
+RBPO,Ribulose-bisphosphate oxygenase,o2_c + rb15bp_c -> 2pglyc_c + 3pg_c + 2 h_c,CBB,0,1000

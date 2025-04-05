@@ -1,0 +1,4 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+MCR,malonyl-CoA reductase,malcoa_c + nadph_c -> msa_c + nadp_c + coa_c,x_BKACEcycle,0,1000
+KCE,BKACE,msa_c + accoa_c -> acac_c + forcoa_c,x_BKACEcycle,0,1000
+TRANSF,formate-acetoacetate CoA-transferase,forcoa_c + acac_c -> aacoa_c + for_c,x2_BKACE-Transf,0,1000

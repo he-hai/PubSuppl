@@ -1,0 +1,29 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+RBPC,Ribulose-bisphosphate carboxylase,co2 + h2o + rb15bp -> 2 3pg + 2 h,CBB,0,1000
+RBPO,Ribulose-bisphosphate oxygenase,o2 + rb15bp -> 2pglyc + 3pg + 2 h,CBB,0,1000
+PGK,Phosphoglycerate kinase,3pg + atp -> 13dpg + adp,CBB,0,1000
+GAPDH,glyceraldehyde-3-phosphate dehydrogenase,13dpg + nadph <=> g3p + nadp + pi,CBB,0,1000
+TPI,Triose-phosphate isomerase,g3p <=> dhap,CBB,-1000,1000
+FBA,Fructose-bisphosphate aldolase,g3p + dhap <=> fdp,CBB,-1000,1000
+FBP,Fructose-bisphosphatase,fdp + h2o -> f6p + pi,CBB,0,1000
+TKT1,Transketolase,g3p + f6p <=> e4p + xu5p,CBB,0,1000
+FBP3,Sedoheptulose 1 7-bisphosphate D-glyceraldehyde-3-phosphate-lyase,e4p + dhap <=> s17bp,CBB,-1000,1000
+SBP,Sedoheptulose-bisphosphatase,s17bp + h2o -> s7p + pi,CBB,0,1000
+TKT2,Transketolase,g3p + s7p <=> r5p + xu5p,CBB,-1000,1000
+RPE,Ribulose 5-phosphate 3-epimerase,xu5p <=> ru5p,CBB,-1000,1000
+RPI,Ribose-5-phosphate isomerase,r5p <=> ru5p,CBB,-1000,1000
+PRK,Phosphoribulokinase,ru5p + atp -> rb15bp + adp + h,CBB,0,1000
+ADK,adenylate kinase,amp + atp -> 2 adp,energy and electron,0,1000
+DM_atp,atp synthase,adp + pi -> atp,energy and electron,0,1000
+DM_e,NAD reducing,nad -> nadh + h,energy and electron,0,1000
+TDH,transhydrogenase,nadh + nadp <=> nad + nadph, energy and electron,-1000,1000
+Fdr,Fd reducing,fdxo -> fdxrd,energy and electron,0,1000
+PPA,Inorganic diphosphatase,ppi + h2o -> 2 pi + h,energy and electron,0,1000
+HCO3E,HCO3 equilibration reaction,co2 + h2o <=> h + hco3,input and output,-1000,1000
+EX_co2,Exchange of co2,co2 <=>,input and output,-1000,1000
+EX_pi,Exchange of phosphate,pi <=>,input and output,-1000,1000
+EX_o2,Exchange of o2,o2 <=>,input and output,-1000,1000
+EX_h2o,Exchange of h2o,h2o <=>,input and output,-1000,1000
+EX_nh3,Exchange of nh3,nh3 <=>,input and output,-1000,1000
+EX_h,Exchange of proton,h <=>,input and output,-1000,1000
+sink_3pg,Sink of 3pg,3pg ->,input and output,1,1

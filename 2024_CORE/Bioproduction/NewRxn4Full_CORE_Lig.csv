@@ -1,0 +1,5 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+MCR,malonyl-CoA reductase,malcoa_c + nadph_c -> msa_c + nadp_c + coa_c,x_BKACEcycle,0,1000
+KCE,BKACE,msa_c + accoa_c -> acac_c + forcoa_c,x_BKACEcycle,0,1000
+THIOEST,thioesterase or spontaneous,forcoa_c + h2o_c -> for_c + coa_c + h_c,x1_BKACE-Synth,0,1000
+AASYNTH,acetoacetyl-CoA synthetase,acac_c + coa_c + atp_c -> aacoa_c + amp_c + ppi_c,x1_BKACE-Synth,0,1000

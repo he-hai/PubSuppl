@@ -1,0 +1,12 @@
+RxnID,RxnName,RxnFormula,Subsystem,LowerBound,UpperBound
+PGLYCP,Phosphoglycolate phosphatase,2pglyc + h2o -> glyclt + pi,a_photorespiration, 0, 1000
+GLYCTO,glycolate oxidase,glyclt + o2 -> glx + h2o2,a_photorespiration, 0, 1000
+CAT,Catalase,2 h2o2 -> 2 h2o + o2,a_photorespiration, 0, 1000
+SGAT,serine-glyoxylate aminotransferase,glx + ser <=> gly + hpyr,a_photorespiration, 0, 1000
+GGAT,glutamate-glyoxylate aminotransferase,glx + glu -> akg + gly,a_photorespiration, 0, 1000
+Fd-GOGAT,Glutamine oxoglutarate aminotransferase,akg + gln + 2 h + 2 fdxrd -> 2 glu + 2 fdxo,a_photorespiration, 0, 1000
+GLNS,Glutamine synthetase,glu + atp + nh3 -> adp + gln + pi,a_photorespiration, 0, 1000
+GHMT2r,Serine hydroxymethyltransferase,gly + mlthf + h2o -> ser + thf,a_photorespiration, 0, 1000
+GLYCL,glycine decarboxylase,gly + nad + thf -> co2 + mlthf + nadh + nh3,a_photorespiration, 0, 1000
+HYPRR,hydroxypyruvate reductase,hpyr + nadh + h -> glyc + nad,a_photorespiration, 0, 1000
+GLYCK,glycerate kinase,glyc + atp -> 3pg + adp + h,a_photorespiration, 0, 1000

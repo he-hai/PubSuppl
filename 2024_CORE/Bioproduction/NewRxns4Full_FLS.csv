@@ -1,0 +1,3 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+FLS, formolase, 3 fald_c -> dha_c, FLS, 0, 1000
+DHAK, DHA kinase, dha_c + atp_c -> dhap_c + adp_c + h_c, FLS, 0, 1000

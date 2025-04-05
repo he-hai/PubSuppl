@@ -1,0 +1,4 @@
+RxnID, RxnName, RxnFormula, Subsystem, LowerBound, UpperBound
+SGAT, serine-glyoxylate amino-transferase, ser__L_c + glx_c <=> gly_c + hpyr_c, SerCyc, -1000, 1000
+MTK, Malate thiokinase, mal__L_c + atp_c + coa_c --> malylcoa_c + adp_c + pi_c, SerCyc, 0, 1000
+MCL, malyl-CoA lyase, malylcoa_c --> accoa_c + glx_c, SerCyc, -1000, 1000
