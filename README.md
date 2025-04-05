@@ -31,7 +31,7 @@ The directory contains Jupyter notebooks of FBA and MDF modeling of the tartrony
 The directory contains Jupyter notebook of FBA modeling of the serine threonine cycle (STC), an autocatalytic C1 assimilation pathway ([Wenk *et al.*, *bioRxiv* 2022](https://www.biorxiv.org/content/10.1101/2022.09.28.509898v1)) -> ([Wenk *et al.*, *Metabolic Engineering* 2025](https://doi.org/10.1016/j.ymben.2024.10.007)).
 
 ### 7. [2022_formate_reduction](2022_formate_reduction)  
-The directory contains scripts and models for MDF and FBA modeling of different formate reduction routes ([Nattermann *et al.*, *Nature Communications* 2023](https://www.nature.com/articles/s41467-023-38072-w)). The freezed version for the publication was also deposited on [Zenodo](https://doi.org/10.5281/zenodo.7752828).
+The directory contains scripts and models for MDF and FBA modeling of different formate reduction routes ([Nattermann *et al.*, *Nature Communications* 2023](https://www.nature.com/articles/s41467-023-38072-w)). The freezed version for the publication was also deposited at [Zenodo](https://doi.org/10.5281/zenodo.7752828).
 
 ### 8. [2023_THETA](2023_THETA)  
 The directory contains scripts and models for MDF analysis of the THETA cycle ([Luo *et al.*, *Nature Catalysis* 2023](https://doi.org/10.1038/s41929-023-01079-z)).   
@@ -40,4 +40,7 @@ The directory contains scripts and models for MDF analysis of the THETA cycle ([
 The directory contains scripts and models for estimation of formaldehyde dependencies of formaldehyde metabolic sensors ([Schann *et al.*, *bioRxiv* 2023](https://www.biorxiv.org/content/10.1101/2023.06.29.547045v1)).
 
 ### 10. [2022_EuMP](2022_EuMP)   
-The directory contains Jupyter notebooks of FBA and MDF modeling of the Erythrulose MonoPhosphate (EuMP) cycle, a new-to-nature C1/formaldehyde assimilation pathway ([Wu *et al.*, *Nature Communications* 2023](https://doi.org/10.1038/s41467-023-44247-2)). The freezed version for the publication was also deposited on [Zenodo](https://doi.org/10.5281/zenodo.10207936).
+The directory contains Jupyter notebooks of FBA and MDF modeling of the Erythrulose MonoPhosphate (EuMP) cycle, a new-to-nature C1/formaldehyde assimilation pathway ([Wu *et al.*, *Nature Communications* 2023](https://doi.org/10.1038/s41467-023-44247-2)). The freezed version for the publication was also deposited at [Zenodo](https://doi.org/10.5281/zenodo.10207936).
+
+### 11. [2025_CORE](2024_CORE)
+The directory contains Models and python scripts for flux balance analysis (FBA) of a new-to-nature CO2 reduction module, the CORE cycle ([Satanowski *et al.*, *Nature Communications* 2025](https://doi.org/10.1038/s41467-025-57549-4)). A freezed version for the publication was also deposited at [Edmond](https://doi.org/10.17617/3.V8KJFV).
