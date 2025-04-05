@@ -15,3 +15,4 @@
 * Gene-Protein-Reaction associations of TYRL (tyrosine lyase) and THZPSN3 (thiazole phosphate synthesis) should be exchanged to each other ([Jurgenson et al., *Annu Rev Biochem* 2009](https://doi.org/10.1146/annurev.biochem.78.072407.102340)).  
 * TRPS1 = TRPS3 + TRPS2. TrpA & TrpB protein, subunits of the tryptophan synthase. Because the two reaction steps are channeled between the two subunits ([Lane & Kirschner, *Biochemistry* 1991](https://pubmed.ncbi.nlm.nih.gov/1899028/)), TRPS3 & TRPS2 may be removed from the model.  
 * Ethanolamine ammonia-lyase (ETHAAL, *eutBC*) requires coenzyme B12 to work.  
+* Uracil degradation pathway GPR for rutC & rutD: ([Parales & Ingraham 2010](https://journals.asm.org/doi/10.1128/JB.00573-10)) vs ([Buckner et al. 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8113886/))
