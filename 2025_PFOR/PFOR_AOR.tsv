@@ -1,0 +1,62 @@
+!!!SBtab DocumentName='PFOR_AOR' SBtabVersion='1.0'			
+!!SBtab TableID='Configuration' TableType='Config'			
+!Option	!Value	!Comment	
+algorithm	MDF	ECM, or MDF	
+p_h	7.5		
+ionic_strength	250 mM	
+temperature	298.15K	
+p_mg	3		
+dg_confidence	0.95	default, [0,1)		
+
+!!SBtab TableID='Reaction' TableType='Reaction'
+!ID	!ReactionFormula
+PFOR	pyr + coa + 2 fdxo <=> accoa + co2 + 2 fdxr
+AOR	3pg + 2 fdxr <=> h2o + gap + 2 fdxo
+
+!!SBtab TableID='Compound' TableType='Compound'
+!ID	!Identifiers
+h2o	kegg:C00001
+nad	kegg:C00003
+nadh	kegg:C00004
+nadph	kegg:C00005		
+nadp	kegg:C00006	
+nh3	kegg:C00014
+pyr	kegg:C00022
+fdxo	kegg:C00139
+fdxr	kegg:C00138
+co2	kegg:C00011	
+hco3	kegg:C00288
+coa	kegg:C00010
+accoa	kegg:C00024
+succ	kegg:C00042
+succoa	kegg:C00091
+ac	kegg:C00033
+akg	kegg:C00026
+gap	kegg:C00118
+3pg	kegg:C00197
+
+!!SBtab TableID='Flux' TableType='Quantity' Unit='mM/s'			
+!QuantityType	!Reaction	!Value	
+rate of reaction	PFOR	1	
+rate of reaction	AOR	1	
+			
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'			
+!QuantityType	!Compound	!Min	!Max
+concentration	nadh	0.1	0.1
+concentration	nad	1	1
+concentration	nadp	0.01	0.01
+concentration	nadph	0.1	0.1
+concentration	co2	0.01	0.01
+concentration	nh3	10	10
+concentration	coa	1	1
+concentration	accoa	0.001	10
+concentration	gap	0.001	10
+concentration	ac	0.001	10
+concentration	pyr	0.001	10
+concentration	akg	0.001	10
+concentration	succ	0.001	10
+concentration	succoa	0.001	10
+concentration	fdxo	1	1
+concentration	fdxr	1	1
+concentration	3pg	0.001	10
+
