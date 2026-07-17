@@ -16,3 +16,5 @@
 * TRPS1 = TRPS3 + TRPS2. TrpA & TrpB protein, subunits of the tryptophan synthase. Because the two reaction steps are channeled between the two subunits ([Lane & Kirschner, *Biochemistry* 1991](https://pubmed.ncbi.nlm.nih.gov/1899028/)), TRPS3 & TRPS2 may be removed from the model.  
 * Ethanolamine ammonia-lyase (ETHAAL, *eutBC*) requires coenzyme B12 to work.  
 * Uracil degradation pathway GPR for rutC & rutD: ([Parales & Ingraham 2010](https://journals.asm.org/doi/10.1128/JB.00573-10)) vs ([Buckner et al. 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8113886/))
+* Methionine synthase (METS) should be in two copies: MetE (b3829) is coenzyme B12 independent, while MetH (b4019) is coenzyme B12 dependent. 
+* The class III ribonucleotide reductases (EC 1.1.98.6) is encoded by *nrdD* (b4238), which is activated by NrdG (b4237) using elctrons from FNR under anaerobic conditions and is inactivated by oxygen ([EcoCyc](https://ecocyc.org/gene?orgid=ECOLI&id=EG11417#SUMMARY)). The enzyme uses formate as hydrogen donor ([Mulliez et al., *PNAS* 1995](https://doi.org/10.1073/pnas.92.19.8759)), reactions RNTR1c2, RNTR2c2, RNTR3c2, and RNTR4c2 are wrong.
