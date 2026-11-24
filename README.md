@@ -44,3 +44,6 @@ The directory contains Jupyter notebooks of FBA and MDF modeling of the Erythrul
 
 ### 11. [2024_CORE](2024_CORE)
 The directory contains Models and python scripts for flux balance analysis (FBA) of a new-to-nature CO2 reduction module, the CORE cycle ([Satanowski *et al.*, *Nature Communications* 2025](https://doi.org/10.1038/s41467-025-57549-4)). A freezed version for the publication was also deposited at [Edmond](https://doi.org/10.17617/3.V8KJFV).
+
+### 12. [2025_PFOR](2025_PFOR)
+The directory contains script and inputs for thermodynamics calculation for the PFOR related cascades ([He *et al.*, *ACS Synthetic Biology* 2026](https://doi.org/10.1021/acssynbio.6c00505)). A freezed version for the publication was also deposited at [Zenodo](https://doi.org/10.5281/zenodo.22859227).
